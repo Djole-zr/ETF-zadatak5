@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Želimir Obradović</title>
+    <link rel="stylesheet" href="css/global.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="right-nav">
+        <a href="index.html">
+          <img src="images/KK_Partizan_logo.svg" alt="grb KK Partizan" />
+        </a>
+        <h1>Želimir Obradović</h1>
+      </div>
+      <ul class="nav-list">
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="slike.html">Slike</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+    <main class="contact-main">
+      <div class="contact-left">
+        <h2>Ostavite poruku:</h2>
+        <form name="message-form" class="message-form">
+          <label for="name">Ime:</label>
+          <input type="text" id="name" name="name" />
+          <label for="email">Adresa E-pošte:</label>
+          <input type="email" name="email" id="email" />
+          <label for="telephone">Telefon:</label>
+          <input type="tel" name="telephone" id="telephone" />
+          <label for="message">Vaša poruka:</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <button class="button-form">Pošalji poruku</button>
+        </form>
+      </div>
+      <div class="contact-right">
+        <h2>Zid sa porukama:</h2>
+        <button class="brisanje">Obriši sve poruke</button>
+        <table>
+          <thead>
+            <tr>
+              <th>Ime</th>
+              <th>Adresa E-pošte</th>
+              <th>Poruka</th>
+            </tr>
+          </thead>
+          <tbody class="add-message"></tbody>
+        </table>
+      </div>
+    </main>
+    <script src="javascript/app.js"></script>
+  </body>
+</html>
