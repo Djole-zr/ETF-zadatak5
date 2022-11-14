@@ -136,15 +136,36 @@ a:visited {
     justify-content: space-around;
 }
 
+h2 {
+    padding-bottom: 2rem;
+}
+
 .message-form {
     display: grid;
     grid-template-columns: 15rem 25rem;
     row-gap: 2rem;
 }
 
-/* ************************************QUERIES***************************** */
-@media (max-width: 110em) {
-    html {
-        font-size: 45%;
-    }
+.message-form button {
+    grid-column: span 2;
+    justify-self: center;
+    padding: 0.5em 1em;
+}
+
+button {
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    font-weight: bold;
+}
+
+.message-wall {
+    border-collapse: collapse;
+    border: 0.2rem solid white;
+}
+
+.message-wall th,
+.message-wall td {
+    border: 0.2rem solid white;
+    padding: 0.5rem 1rem;
+    min-width: 30rem;
 }

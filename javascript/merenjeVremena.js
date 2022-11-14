@@ -6,14 +6,14 @@ function merenjeVremena () {
            console.log(vreme);
            localStorage.setItem('vreme', vreme)
            alert(`${vreme} minuta ste proveli na stranici`);
-        }, 5000);
+        }, 60000);
 
     } else {
         setTimeout(() => {
             localStorage.setItem('vreme', 1);
             alert('1 minut ste proveli na stranici');
             merenjeVremena();          
-        }, 5000);
+        }, 60000);
     }
 }
 

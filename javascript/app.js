@@ -1,4 +1,5 @@
 const dugmeFormular = document.querySelector(".button-form");
+const brisanje = document.querySelector(".brisanje");
 
 function proveriIme() {
   const ime = document.querySelector("#name").value;
@@ -120,8 +121,10 @@ window.onload = function () {
   ispisivanjePoruka();
 };
 
-const brisanje = document.querySelector(".brisanje");
+
 
 brisanje.addEventListener("click", function () {
-  localStorage.clear();
+  const tabela = document.querySelector(".add-message");
+  localStorage.removeItem('nizPoruka');
+  ukloniPrethodnuTabelu(tabela);
 });
