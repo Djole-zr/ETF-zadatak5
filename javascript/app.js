@@ -3,7 +3,7 @@ const brisanje = document.querySelector(".brisanje");
 
 function proveriIme() {
   const ime = document.querySelector("#name").value;
-  const regEx = /.{2,20}/;
+  const regEx = /^.{2,20}$/;
   if (regEx.test(ime)) {
     proveriAdresu();
   } else {
@@ -35,7 +35,7 @@ function proveriTelefon() {
 
 function proveriPoruku() {
   const poruka = document.querySelector("#message").value;
-  const regEx = /.{1,140}/;
+  const regEx = /^.{1,140}$/;
   if (regEx.test(poruka)) {
     sacuvatiPoruku();
   } else {
